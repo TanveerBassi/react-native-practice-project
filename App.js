@@ -8,17 +8,17 @@ const App = () => {
         <Text style={styles.heading}>
           Here are some boxes of different colours
         </Text>
-        <View style={styles.cyanBox}>
+        <View style={[styles.box, styles.cyan]}>
           <Text style={styles.text}>Cyan #2aa198</Text>
         </View>
-        <View style={styles.blueBox}>
+        <View style={[styles.box, styles.blue]}>
           <Text style={styles.text}>Blue #268bd2</Text>
         </View>
-        <View style={styles.magentaBox}>
-          <Text style={styles.text}>Magenta #FF00FF</Text>
+        <View style={[styles.box, styles.magenta]}>
+          <Text style={styles.text}>Magenta #d33682</Text>
         </View>
-        <View style={styles.orangeBox}>
-          <Text style={styles.text}>Orange #FFA500</Text>
+        <View style={[styles.box, styles.orange]}>
+          <Text style={styles.text}>Orange #cb4b16</Text>
         </View>
       </View>
     </SafeAreaView>
@@ -39,37 +39,24 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: 'white',
   },
-  cyanBox: {
+  box: {
     padding: 10,
     borderRadius: 3,
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 10,
+  },
+  cyan: {
     backgroundColor: '#2aa198',
   },
-  blueBox: {
-    padding: 10,
-    borderRadius: 3,
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginBottom: 10,
+  blue: {
     backgroundColor: '#268bd2',
   },
-  magentaBox: {
-    padding: 10,
-    borderRadius: 3,
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginBottom: 10,
-    backgroundColor: '#FF00FF',
+  magenta: {
+    backgroundColor: '#d33682',
   },
-  orangeBox: {
-    padding: 10,
-    borderRadius: 3,
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginBottom: 10,
-    backgroundColor: '#FFA500',
+  orange: {
+    backgroundColor: '#cb4b16',
   },
 });
 
